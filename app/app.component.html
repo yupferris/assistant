@@ -1,17 +1,37 @@
 <div class="container">
   <div class="row">
-    <div class="one-half column" style="margin-top: 25%">
+    <div class="one-half column" style="margin-top: 10%">
       <h1>{{title}}</h1>
+    </div>
+  </div>
 
-      <h2>algorithms</h2>
+  <hr />
 
-      <div *ngFor="let alg of algorithms">
-        <p>type: {{alg.type}}</p>
-        name: {{alg.name}}
+  <div class="row">
+    <div class="one-half column">
+      <h4>algorithms</h4>
+    </div>
+  </div>
+
+  <hr />
+
+  <div *ngFor="let alg of algorithms">
+    <div class="row">
+      <div class="one column">
+        <p><b>{{alg.name}}</b></p>
+      </div>
+
+      <div class="two columns">
         <img src="images/{{alg.imageFileName}}" />
-        moves: {{alg.moves}}
-        comments: {{alg.comments}}
+      </div>
+
+      <div class="nine columns">
+        <!--p>type: {{alg.type}}</p-->
+        <pre><code>{{alg.moves}}</code></pre>
+        <p>{{alg.comments}}</p>
       </div>
     </div>
+
+    <hr />
   </div>
 </div>
