@@ -1,25 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+// TODO: Look into why this is deprecated and what to use instead
+import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router-deprecated';
 
-import { Algorithm } from './algorithm';
 import { Database } from './database.service';
+import { AlgorithmsComponent } from './algorithms.component';
 
 @Component({
     selector: 'my-app',
     templateUrl: 'app/app.component.html',
-    providers: [Database]
+    directives: [ROUTER_DIRECTIVES],
+    providers: [
+        ROUTER_PROVIDERS,
+        Database
+    ]
 })
-export class AppComponent implements OnInit {
+@RouteConfig([
+    {
+        path: '/algorithms',
+        name: 'Algorithms',
+        component: AlgorithmsComponent,
+        useAsDefault: true
+    }
+])
+export class AppComponent {
     title = 'assistant';
-    algorithms: Algorithm[];
-
-    constructor(private database: Database) { }
-
-    ngOnInit() {
-        this.getAlgorithms();
-    }
-
-    getAlgorithms() {
-        this.database.getAlgorithms().then(
-            algorithms => this.algorithms = algorithms);
-    }
 }

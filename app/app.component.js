@@ -9,26 +9,33 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+// TODO: Look into why this is deprecated and what to use instead
+var router_deprecated_1 = require('@angular/router-deprecated');
 var database_service_1 = require('./database.service');
+var algorithms_component_1 = require('./algorithms.component');
 var AppComponent = (function () {
-    function AppComponent(database) {
-        this.database = database;
+    function AppComponent() {
         this.title = 'assistant';
     }
-    AppComponent.prototype.ngOnInit = function () {
-        this.getAlgorithms();
-    };
-    AppComponent.prototype.getAlgorithms = function () {
-        var _this = this;
-        this.database.getAlgorithms().then(function (algorithms) { return _this.algorithms = algorithms; });
-    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
             templateUrl: 'app/app.component.html',
-            providers: [database_service_1.Database]
-        }), 
-        __metadata('design:paramtypes', [database_service_1.Database])
+            directives: [router_deprecated_1.ROUTER_DIRECTIVES],
+            providers: [
+                router_deprecated_1.ROUTER_PROVIDERS,
+                database_service_1.Database
+            ]
+        }),
+        router_deprecated_1.RouteConfig([
+            {
+                path: '/algorithms',
+                name: 'Algorithms',
+                component: algorithms_component_1.AlgorithmsComponent,
+                useAsDefault: true
+            }
+        ]), 
+        __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());

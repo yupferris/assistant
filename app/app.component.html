@@ -12,30 +12,12 @@
   <hr />
 
   <div class="row">
-    <div class="one-half column">
-      <h4>algorithms</h4>
+    <div class="four columns">
+      <a class="button button-primary" [routerLink]="['Algorithms']">algorithms</a>
     </div>
   </div>
 
   <hr />
 
-  <div *ngFor="let alg of algorithms">
-    <div class="row">
-      <div class="one column">
-        <p><b>{{alg.name}}</b></p>
-      </div>
-
-      <div class="two columns">
-        <img src="images/{{alg.imageFileName}}" />
-      </div>
-
-      <div class="nine columns">
-        <!--p>type: {{alg.type}}</p-->
-        <pre><code>{{alg.moves}}</code></pre>
-        <p>{{alg.comments}}</p>
-      </div>
-    </div>
-
-    <hr />
-  </div>
+  <router-outlet></router-outlet>
 </div>
