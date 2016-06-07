@@ -9,27 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var database_service_1 = require('./database.service');
-var AppComponent = (function () {
-    function AppComponent(database) {
-        this.database = database;
-        this.title = 'assistant';
+var algorithms_1 = require('./algorithms');
+var Database = (function () {
+    function Database() {
     }
-    AppComponent.prototype.ngOnInit = function () {
-        this.getAlgorithms();
+    Database.prototype.getAlgorithms = function () {
+        return Promise.resolve(algorithms_1.ALGORITHMS);
     };
-    AppComponent.prototype.getAlgorithms = function () {
-        var _this = this;
-        this.database.getAlgorithms().then(function (algorithms) { return _this.algorithms = algorithms; });
-    };
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            template: '<h1>{{title}}</h1>'
-        }), 
-        __metadata('design:paramtypes', [database_service_1.Database])
-    ], AppComponent);
-    return AppComponent;
+    Database = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [])
+    ], Database);
+    return Database;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.Database = Database;
+//# sourceMappingURL=database.service.js.map
