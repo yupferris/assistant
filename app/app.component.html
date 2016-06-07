@@ -5,6 +5,8 @@
   <li *ngFor="let alg of algorithms">
     type: {{alg.type}}
     name: {{alg.name}}
-    <img src="assets/{{alg.imageFileName}}" />
+    <img src="images/{{alg.imageFileName}}" />
+    moves: {{alg.moves}}
+    comments: {{alg.comments}}
   </li>
 </ul>
