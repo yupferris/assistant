@@ -3,6 +3,10 @@ import { Component } from '@angular/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router-deprecated';
 
 import { Database } from './database.service';
+
+import { SolvingComponent } from './solving.component';
+import { OllPracticeComponent } from './oll-practice.component';
+import { PllPracticeComponent } from './pll-practice.component';
 import { AlgorithmsComponent } from './algorithms.component';
 
 @Component({
@@ -16,10 +20,25 @@ import { AlgorithmsComponent } from './algorithms.component';
 })
 @RouteConfig([
     {
+        path: '/solving',
+        name: 'Solving',
+        component: SolvingComponent,
+        useAsDefault: true
+    },
+    {
+        path: '/oll-practice',
+        name: 'OllPractice',
+        component: OllPracticeComponent
+    },
+    {
+        path: '/pll-practice',
+        name: 'PllPractice',
+        component: PllPracticeComponent
+    },
+    {
         path: '/algorithms',
         name: 'Algorithms',
-        component: AlgorithmsComponent,
-        useAsDefault: true
+        component: AlgorithmsComponent
     }
 ])
 export class AppComponent {

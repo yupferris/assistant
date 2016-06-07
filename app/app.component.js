@@ -12,6 +12,9 @@ var core_1 = require('@angular/core');
 // TODO: Look into why this is deprecated and what to use instead
 var router_deprecated_1 = require('@angular/router-deprecated');
 var database_service_1 = require('./database.service');
+var solving_component_1 = require('./solving.component');
+var oll_practice_component_1 = require('./oll-practice.component');
+var pll_practice_component_1 = require('./pll-practice.component');
 var algorithms_component_1 = require('./algorithms.component');
 var AppComponent = (function () {
     function AppComponent() {
@@ -29,10 +32,25 @@ var AppComponent = (function () {
         }),
         router_deprecated_1.RouteConfig([
             {
+                path: '/solving',
+                name: 'Solving',
+                component: solving_component_1.SolvingComponent,
+                useAsDefault: true
+            },
+            {
+                path: '/oll-practice',
+                name: 'OllPractice',
+                component: oll_practice_component_1.OllPracticeComponent
+            },
+            {
+                path: '/pll-practice',
+                name: 'PllPractice',
+                component: pll_practice_component_1.PllPracticeComponent
+            },
+            {
                 path: '/algorithms',
                 name: 'Algorithms',
-                component: algorithms_component_1.AlgorithmsComponent,
-                useAsDefault: true
+                component: algorithms_component_1.AlgorithmsComponent
             }
         ]), 
         __metadata('design:paramtypes', [])
