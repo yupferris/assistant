@@ -1,12 +1,4 @@
-<!--div class="row">
-  <div class="one-half column">
-    <h4>algorithms</h4>
-  </div>
-</div>
-
-<hr /-->
-
-<div *ngFor="let alg of algorithms">
+<div *ngFor="let alg of algorithms; #isLast = last">
   <div class="row">
     <div class="one column">
       <p><b>{{alg.name}}</b></p>
@@ -17,11 +9,10 @@
     </div>
 
     <div class="nine columns">
-      <!--p>type: {{alg.type}}</p-->
       <pre><code>{{alg.moves}}</code></pre>
       <p>{{alg.comments}}</p>
     </div>
   </div>
 
-  <hr />
+  <hr *ngIf="!isLast" />
 </div>

@@ -5,8 +5,7 @@ import { Database } from './database.service';
 
 @Component({
     selector: 'algorithms',
-    templateUrl: 'app/algorithms.component.html',
-    providers: [Database]
+    templateUrl: 'app/algorithms.component.html'
 })
 export class AlgorithmsComponent implements OnInit {
     algorithms: Algorithm[];
