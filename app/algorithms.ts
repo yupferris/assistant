@@ -1,4 +1,4 @@
-import { AlgorithmType, Algorithm } from './algorithm';
+import { Algorithm, AlgorithmType } from './algorithm';
 
 export var ALGORITHMS: Algorithm[] = [
     { "type": AlgorithmType.Oll, "name": "28", "imageFileName": "oll28.gif", "moves": "(M' U M) U2 (M' U M)", "comments": "The middle slices should be done with the left ring finger for M' and the left thumb for M. The (M' U M) group may take some getting used to." },

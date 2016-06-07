@@ -35,12 +35,12 @@ var AppComponent = (function () {
                 path: '/solving',
                 name: 'Solving',
                 component: solving_component_1.SolvingComponent,
-                useAsDefault: true
             },
             {
                 path: '/oll-practice',
                 name: 'OllPractice',
-                component: oll_practice_component_1.OllPracticeComponent
+                component: oll_practice_component_1.OllPracticeComponent,
+                useAsDefault: true
             },
             {
                 path: '/pll-practice',

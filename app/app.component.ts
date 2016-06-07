@@ -23,12 +23,13 @@ import { AlgorithmsComponent } from './algorithms.component';
         path: '/solving',
         name: 'Solving',
         component: SolvingComponent,
-        useAsDefault: true
+        //useAsDefault: true
     },
     {
         path: '/oll-practice',
         name: 'OllPractice',
-        component: OllPracticeComponent
+        component: OllPracticeComponent,
+        useAsDefault: true
     },
     {
         path: '/pll-practice',
