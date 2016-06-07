@@ -5,7 +5,8 @@ import { Database } from './database.service';
 
 @Component({
     selector: 'my-app',
-    template: '<h1>{{title}}</h1>'
+    template: '<h1>{{title}}</h1>',
+    providers: [Database]
 })
 export class AppComponent implements OnInit {
     title = 'assistant';

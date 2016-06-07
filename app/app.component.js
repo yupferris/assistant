@@ -25,7 +25,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>{{title}}</h1>'
+            template: '<h1>{{title}}</h1>',
+            providers: [database_service_1.Database]
         }), 
         __metadata('design:paramtypes', [database_service_1.Database])
     ], AppComponent);

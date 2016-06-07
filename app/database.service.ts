@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 
-import { Algorithm } from './algorithm';
 import { ALGORITHMS } from './algorithms';
 
 @Injectable()
