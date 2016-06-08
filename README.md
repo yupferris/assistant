@@ -3,7 +3,10 @@
 Another Rubik's Cube trainer.
 
 ## status
-Haven't really started. But I've done [this kind of thing before in .net](https://github.com/yupferris/FrostBlade), so "porting" bits of that is probably a good way to go :)
+- [ ] Standard solving
+- [ ] OLL practice
+- [ ] PLL practice
+- [x] Algorithm viewer
 
 ## attribution
 assistant uses [Angular 2.0](https://angular.io/), [Skeleton 2.0.4](http://getskeleton.com/) and a Makise Kurisu .gif from [Phantom Breaker Battle Grounds](http://5pb.jp/games/pbbg/en/character_4.html).
