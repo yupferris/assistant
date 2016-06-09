@@ -49,18 +49,20 @@ export class OllPracticeComponent implements OnInit {
             switch (this.state) {
             case State.Idle:
                 this.state = State.Countdown;
-                this.currentAlgorithm = this.algorithms[Math.floor(Math.random() * this.algorithms.length)];
+                this.currentAlgorithm = null;
                 this.moves = "";
                 this.displayValue = "3";
                 setTimeout(() => {
                     this.displayValue = "2";
                     setTimeout(() => {
+                        this.currentAlgorithm = this.algorithms[Math.floor(Math.random() * this.algorithms.length)];
                         this.displayValue = "1";
                         setTimeout(() => {
                             this.state = State.Running;
                             this.startTime = Date.now();
                             this.interval = setInterval(() => {
-                                this.displayValue = Date.now() - this.startTime;
+                                let elapsed = new Date(Date.now() - this.startTime);
+                                this.displayValue = elapsed.getSeconds() + "." + elapsed.getMilliseconds();
                             }, 0);
                         }, 1000);
                     }, 1000);
