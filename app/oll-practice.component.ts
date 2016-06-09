@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { Algorithm, AlgorithmType } from './algorithm';
 import { Database } from './database.service';
 
+import { AlgorithmComponent } from './algorithm.component';
+
 enum State {
     Unitialized,
     Idle,
@@ -13,6 +15,7 @@ enum State {
 @Component({
     selector: 'oll-practice',
     templateUrl: 'app/oll-practice.component.html',
+    directives: [AlgorithmComponent],
     host: {
         '(document:keydown)': 'keydown($event)'
     }
@@ -22,7 +25,7 @@ export class OllPracticeComponent implements OnInit {
 
     currentAlgorithm: Algorithm;
     displayValue = "ready";
-    moves = "";
+    showAlgorithm = false;
 
     private state = State.Unitialized;
     private startTime;
@@ -50,7 +53,7 @@ export class OllPracticeComponent implements OnInit {
             case State.Idle:
                 this.state = State.Countdown;
                 this.currentAlgorithm = null;
-                this.moves = "";
+                this.showAlgorithm = false;
                 this.displayValue = "3";
                 setTimeout(() => {
                     this.displayValue = "2";
@@ -72,7 +75,7 @@ export class OllPracticeComponent implements OnInit {
             case State.Running:
                 this.state = State.Idle;
                 clearInterval(this.interval);
-                this.moves = this.currentAlgorithm.moves;
+                this.showAlgorithm = true;
                 break;
             }
         }

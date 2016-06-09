@@ -11,7 +11,7 @@
   <div class="twelve columns">
     <div align="center">
       <h4>{{displayValue}}</h4>
-      <p *ngIf="moves">{{moves}}</p>
+      <algorithm *ngIf="showAlgorithm" [algorithm]="currentAlgorithm"></algorithm>
     </div>
   </div>
 </div>

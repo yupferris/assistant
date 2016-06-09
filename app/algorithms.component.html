@@ -1,18 +1,5 @@
-<div *ngFor="let alg of algorithms; #isLast = last">
-  <div class="row">
-    <div class="one column">
-      <p><b>{{alg.name}}</b></p>
-    </div>
-
-    <div class="two columns">
-      <img src="images/{{alg.imageFileName}}" />
-    </div>
-
-    <div class="nine columns">
-      <pre><code>{{alg.moves}}</code></pre>
-      <p>{{alg.comments}}</p>
-    </div>
-  </div>
+<div *ngFor="let alg of algorithms; let isLast = last">
+  <algorithm [algorithm]="alg"></algorithm>
 
   <hr *ngIf="!isLast" />
 </div>
