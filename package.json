@@ -1,13 +1,12 @@
 {
-    "name": "angular2-quickstart",
+    "name": "assistant",
     "version": "1.0.0",
     "scripts": {
-        "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
-        "lite": "lite-server",
-        "postinstall": "typings install",
-        "tsc": "tsc",
-        "tsc:w": "tsc -w",
-        "typings": "typings"
+        "clean": "gulp clean",
+        "compile": "gulp compile",
+        "build": "gulp build",
+        "start": "gulp build && concurrently --kill-others \"gulp watch\" \"lite-server\"",
+        "postinstall": "typings install"
     },
     "license": "ISC",
     "dependencies": {
