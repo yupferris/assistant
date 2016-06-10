@@ -24,6 +24,7 @@ var AlgorithmsComponent = (function () {
     };
     AlgorithmsComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'algorithms',
             templateUrl: 'app/algorithms.component.html',
             directives: [algorithm_component_1.AlgorithmComponent]

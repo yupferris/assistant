@@ -19,8 +19,9 @@ var AlgorithmComponent = (function () {
     ], AlgorithmComponent.prototype, "algorithm", void 0);
     AlgorithmComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'algorithm',
-            templateUrl: 'app/algorithm.component.html'
+            templateUrl: 'algorithm.component.html'
         }),
         __metadata('design:paramtypes', [])
     ], AlgorithmComponent);
