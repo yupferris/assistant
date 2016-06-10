@@ -20,7 +20,7 @@ var AlgorithmComponent = (function () {
     AlgorithmComponent = __decorate([
         core_1.Component({
             selector: 'algorithm',
-            templateUrl: 'assistant/app/algorithm.component.html'
+            templateUrl: 'app/algorithm.component.html'
         }),
         __metadata('design:paramtypes', [])
     ], AlgorithmComponent);

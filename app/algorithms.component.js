@@ -25,7 +25,7 @@ var AlgorithmsComponent = (function () {
     AlgorithmsComponent = __decorate([
         core_1.Component({
             selector: 'algorithms',
-            templateUrl: 'assistant/app/algorithms.component.html',
+            templateUrl: 'app/algorithms.component.html',
             directives: [algorithm_component_1.AlgorithmComponent]
         }),
         __metadata('design:paramtypes', [database_service_1.Database])

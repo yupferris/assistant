@@ -76,7 +76,7 @@ var AlgorithmPracticeComponent = (function () {
     AlgorithmPracticeComponent = __decorate([
         core_1.Component({
             selector: 'algorithm-practice',
-            templateUrl: 'assistant/app/algorithm-practice.component.html',
+            templateUrl: 'app/algorithm-practice.component.html',
             directives: [algorithm_component_1.AlgorithmComponent],
             host: {
                 '(document:keydown)': 'keydown($event)'
