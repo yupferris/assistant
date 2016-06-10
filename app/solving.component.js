@@ -15,8 +15,8 @@ var SolvingComponent = (function () {
     SolvingComponent = __decorate([
         core_1.Component({
             selector: 'solving',
-            templateUrl: 'app/solving.component.html'
-        }), 
+            templateUrl: 'assistant/app/solving.component.html'
+        }),
         __metadata('design:paramtypes', [])
     ], SolvingComponent);
     return SolvingComponent;

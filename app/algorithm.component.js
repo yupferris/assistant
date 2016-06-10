@@ -14,14 +14,14 @@ var AlgorithmComponent = (function () {
     function AlgorithmComponent() {
     }
     __decorate([
-        core_1.Input(), 
+        core_1.Input(),
         __metadata('design:type', algorithm_1.Algorithm)
     ], AlgorithmComponent.prototype, "algorithm", void 0);
     AlgorithmComponent = __decorate([
         core_1.Component({
             selector: 'algorithm',
-            templateUrl: 'app/algorithm.component.html'
-        }), 
+            templateUrl: 'assistant/app/algorithm.component.html'
+        }),
         __metadata('design:paramtypes', [])
     ], AlgorithmComponent);
     return AlgorithmComponent;

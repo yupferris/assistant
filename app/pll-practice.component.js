@@ -18,9 +18,9 @@ var PllPracticeComponent = (function () {
     PllPracticeComponent = __decorate([
         core_1.Component({
             selector: 'pll-practice',
-            templateUrl: 'app/pll-practice.component.html',
+            templateUrl: 'assistant/app/pll-practice.component.html',
             directives: [algorithm_practice_component_1.AlgorithmPracticeComponent]
-        }), 
+        }),
         __metadata('design:paramtypes', [])
     ], PllPracticeComponent);
     return PllPracticeComponent;

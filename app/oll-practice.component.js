@@ -18,9 +18,9 @@ var OllPracticeComponent = (function () {
     OllPracticeComponent = __decorate([
         core_1.Component({
             selector: 'oll-practice',
-            templateUrl: 'app/oll-practice.component.html',
+            templateUrl: 'assistant/app/oll-practice.component.html',
             directives: [algorithm_practice_component_1.AlgorithmPracticeComponent]
-        }), 
+        }),
         __metadata('design:paramtypes', [])
     ], OllPracticeComponent);
     return OllPracticeComponent;

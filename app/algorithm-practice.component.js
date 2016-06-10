@@ -70,18 +70,18 @@ var AlgorithmPracticeComponent = (function () {
         }
     };
     __decorate([
-        core_1.Input(), 
+        core_1.Input(),
         __metadata('design:type', Number)
     ], AlgorithmPracticeComponent.prototype, "algorithmType", void 0);
     AlgorithmPracticeComponent = __decorate([
         core_1.Component({
             selector: 'algorithm-practice',
-            templateUrl: 'app/algorithm-practice.component.html',
+            templateUrl: 'assistant/app/algorithm-practice.component.html',
             directives: [algorithm_component_1.AlgorithmComponent],
             host: {
                 '(document:keydown)': 'keydown($event)'
             }
-        }), 
+        }),
         __metadata('design:paramtypes', [database_service_1.Database])
     ], AlgorithmPracticeComponent);
     return AlgorithmPracticeComponent;

@@ -23,7 +23,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            templateUrl: 'app/app.component.html',
+            templateUrl: 'assistant/app/app.component.html',
             directives: [router_deprecated_1.ROUTER_DIRECTIVES],
             providers: [
                 router_deprecated_1.ROUTER_PROVIDERS,
@@ -52,7 +52,7 @@ var AppComponent = (function () {
                 name: 'Algorithms',
                 component: algorithms_component_1.AlgorithmsComponent
             }
-        ]), 
+        ]),
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
