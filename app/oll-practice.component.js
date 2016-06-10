@@ -17,6 +17,7 @@ var OllPracticeComponent = (function () {
     }
     OllPracticeComponent = __decorate([
         core_1.Component({
+            moduleId: module.id,
             selector: 'oll-practice',
             templateUrl: 'oll-practice.component.html',
             directives: [algorithm_practice_component_1.AlgorithmPracticeComponent]
