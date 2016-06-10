@@ -26,7 +26,7 @@ var AlgorithmsComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'algorithms',
-            templateUrl: 'app/algorithms.component.html',
+            templateUrl: 'algorithms.component.html',
             directives: [algorithm_component_1.AlgorithmComponent]
         }),
         __metadata('design:paramtypes', [database_service_1.Database])
