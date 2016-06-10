@@ -16,7 +16,7 @@ var SolvingComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'solving',
-            templateUrl: 'solving.component.html'
+            templateUrl: 'app/solving.component.html'
         }),
         __metadata('design:paramtypes', [])
     ], SolvingComponent);
