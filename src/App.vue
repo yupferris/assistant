@@ -17,13 +17,13 @@
         <a class="button">standard solving</a>
         <a class="button button-primary" href="#">oll practice</a>
         <a class="button button-primary" href="#">pll practice</a>
-        <a class="button button-primary" v-link="{ path: '/algorithms' }">algorithms</a>
+        <a class="button button-primary" href="#">algorithms</a>
       </div>
     </div>
 
     <hr />
 
-    <router-view></router-view>
+    <algorithms></algorithms>
   </div>
 </template>
 
