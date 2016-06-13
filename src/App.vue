@@ -10,20 +10,18 @@
       </div>
     </div>
 
-    <!--hr />
+    <hr />
 
     <div class="row">
       <div class="twelve columns">
         <a class="button">standard solving</a>
         <a class="button button-primary" href="#">oll practice</a>
         <a class="button button-primary" href="#">pll practice</a>
-        <a class="button button-primary" href="#">algorithms</a>
+        <a class="button button-primary" v-link="{ path: '/algorithms' }">algorithms</a>
       </div>
-    </div-->
+    </div>
 
     <hr />
-
-    <algorithms></algorithms>
 
     <router-view></router-view>
   </div>
