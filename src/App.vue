@@ -23,6 +23,14 @@
 
     <hr />
 
+    <div v-show="currentView === 'oll-practice'">
+      <oll-practice></oll-practice>
+    </div>
+
+    <div v-show="currentView === 'pll-practice'">
+      <pll-practice></pll-practice>
+    </div>
+
     <div v-show="currentView === 'algorithms'">
       <algorithms></algorithms>
     </div>
@@ -30,10 +38,14 @@
 </template>
 
 <script>
+import OllPractice from './components/OllPractice'
+import PllPractice from './components/PllPractice'
 import Algorithms from './components/Algorithms'
 
 export default {
   components: {
+    OllPractice,
+    PllPractice,
     Algorithms
   },
   data() {
