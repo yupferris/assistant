@@ -1,6 +1,6 @@
 <template>
   <template v-for="alg in algorithms">
-    <algorithm :alg="alg"></algorithm>
+    <algorithm :algorithm="alg"></algorithm>
 
     <hr v-if="$index != algorithms.length - 1" />
   </template>
