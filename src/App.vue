@@ -24,6 +24,8 @@
     <hr />
 
     <algorithms></algorithms>
+
+    <router-view></router-view>
   </div>
 </template>
 
