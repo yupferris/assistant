@@ -15,15 +15,17 @@
     <div class="row">
       <div class="twelve columns">
         <a class="button">standard solving</a>
-        <a class="button button-primary" href="#">oll practice</a>
-        <a class="button button-primary" href="#">pll practice</a>
-        <a class="button button-primary" href="#">algorithms</a>
+        <a class="button button-primary" v-on:click="navigate('oll-practice')">oll practice</a>
+        <a class="button button-primary" v-on:click="navigate('pll-practice')">pll practice</a>
+        <a class="button button-primary" v-on:click="navigate('algorithms')">algorithms</a>
       </div>
     </div>
 
     <hr />
 
-    <algorithms></algorithms>
+    <div v-show="currentView === 'algorithms'">
+      <algorithms></algorithms>
+    </div>
   </div>
 </template>
 
@@ -33,6 +35,16 @@ import Algorithms from './components/Algorithms'
 export default {
   components: {
     Algorithms
+  },
+  data() {
+    return {
+      currentView: "algorithms"
+    };
+  },
+  methods: {
+    navigate: function(view) {
+      this.currentView = view;
+    }
   }
 }
 </script>
