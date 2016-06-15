@@ -1,10 +1,15 @@
 <template>
-  <p>todo</p>
+  <algorithm-practice :algorithmType="Pll"></algorithm-practice>
 </template>
 
 <script>
+import AlgorithmPractice from "./AlgorithmPractice"
+
 export default {
-  data () {
+  components: {
+    AlgorithmPractice
+  },
+  data() {
     return {
     }
   }

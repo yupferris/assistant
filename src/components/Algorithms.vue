@@ -14,7 +14,7 @@ export default {
   components: {
     Algorithm
   },
-  data () {
+  data() {
     return {
       algorithms: algorithms
     }
