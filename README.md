@@ -1,4 +1,4 @@
-<h1><img src="https://raw.githubusercontent.com/yupferris/assistant/master/static/kurisu.gif" style="float: left" />assistant</h1>
+<h1><img src="https://github.com/yupferris/assistant/blob/master/src/assets/kurisu.gif" style="float: left" />assistant</h1>
 
 Another Rubik's Cube trainer.
 
