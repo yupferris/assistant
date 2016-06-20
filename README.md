@@ -2,6 +2,8 @@
 
 Another Rubik's Cube trainer.
 
+[Try it for yourself!](http://yupferris.github.io/assistant/)
+
 ## description
 
 This is a basic Rubik's Cube trainer that contains a list of algorithms for CFOP, as well as trainers to help memorize and internalize these algorithms.
