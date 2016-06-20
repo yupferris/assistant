@@ -23,13 +23,9 @@
 
     <hr />
 
-    <div v-show="currentView === 'oll-practice'">
-      <oll-practice></oll-practice>
-    </div>
+    <oll-practice :show="currentView === 'oll-practice'"></oll-practice>
 
-    <div v-show="currentView === 'pll-practice'">
-      <pll-practice></pll-practice>
-    </div>
+    <pll-practice :show="currentView === 'pll-practice'"></pll-practice>
 
     <div v-show="currentView === 'algorithms'">
       <algorithms></algorithms>

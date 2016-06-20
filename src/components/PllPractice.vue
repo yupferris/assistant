@@ -1,5 +1,5 @@
 <template>
-  <algorithm-practice :algorithm-type="Pll"></algorithm-practice>
+  <algorithm-practice :algorithm-type="pll" :show="show"></algorithm-practice>
 </template>
 
 <script>
@@ -9,6 +9,7 @@ export default {
   components: {
     AlgorithmPractice
   },
+  props: ["show"],
   data() {
     return {
     }

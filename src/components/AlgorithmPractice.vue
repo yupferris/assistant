@@ -1,20 +1,22 @@
 <template>
-  <div class="row">
-    <div class="twelve columns">
-      <div align="center">
-        <!--img *ngIf="currentAlgorithm" width="228" height="228" src="images/{{currentAlgorithm?.imageFileName}}" style="-ms-interpolation-mode: nearest-neighbor; image-rendering: -webkit-optimize-contrast; image-rendering: -webkit-crisp-edges; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: pixelated;" /-->
-        <div v-if="!currentAlgorithm" style="display: inline-block; width: 228px; height: 228px"></div>
+  <div v-show="show">
+    <div class="row">
+      <div class="twelve columns">
+        <div align="center">
+          <!--img *ngIf="currentAlgorithm" width="228" height="228" src="images/{{currentAlgorithm?.imageFileName}}" style="-ms-interpolation-mode: nearest-neighbor; image-rendering: -webkit-optimize-contrast; image-rendering: -webkit-crisp-edges; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: pixelated;" /-->
+          <div v-if="!currentAlgorithm" style="display: inline-block; width: 228px; height: 228px"></div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="twelve columns">
-      <div align="center">
-        <h4>{{displayValue}}</h4>
+    <div class="row">
+      <div class="twelve columns">
+        <div align="center">
+          <h4>{{displayValue}}</h4>
+        </div>
+
+        <!--algorithm v-if="showAlgorithm" :algorithm="currentAlgorithm"></algorithm-->
       </div>
-
-      <!--algorithm v-if="showAlgorithm" :algorithm="currentAlgorithm"></algorithm-->
     </div>
   </div>
 </template>
@@ -27,7 +29,7 @@ export default {
   components: {
     Algorithm
   },
-  props: ["algorithmType"],
+  props: ["algorithmType", "show"],
   data() {
     return {
       algorithms: algorithms.filter(
@@ -42,10 +44,28 @@ export default {
       interval: 0
     }
   },
-  ready() {
-    console.log("alg practice ready");
-    console.log(" this.algorithms: " + JSON.stringify(this.algorithms));
-    console.log(" this.algorithmType: " + this.algorithmType);
+  methods: {
+    space() {
+      console.log("space");
+    },
+    keydown(e) {
+      if (e.keyCode === 32) {
+        this.space();
+      }
+    }
+  },
+  watch: {
+    "show": function(val, oldVal) {
+      if (val === oldVal) {
+        return;
+      }
+
+      if (val) {
+        window.addEventListener("keydown", this.keydown);
+      } else {
+        window.removeEventListener("keydown", this.keydown);
+      }
+    }
   }
 }
 </script>
