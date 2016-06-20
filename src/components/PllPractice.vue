@@ -1,5 +1,5 @@
 <template>
-  <algorithm-practice :algorithm-type="pll" :show="show"></algorithm-practice>
+  <algorithm-practice algorithm-type="pll" :show="show"></algorithm-practice>
 </template>
 
 <script>
