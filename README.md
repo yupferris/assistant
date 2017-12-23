@@ -14,6 +14,11 @@ This is a basic Rubik's Cube trainer that contains a list of algorithms for CFOP
 - [x] PLL practice
 - [x] Algorithm viewer
 
+## development
+
+Follow the `npm` and `CLI` instructions of the [Vue
+guide](https://vuejs.org/v2/guide/installation.html) to run a dev server.
+
 ## attribution
 assistant uses [Vue.js 1.0](http://vuejs.org/), [Skeleton 2.0.4](http://getskeleton.com/) and a Makise Kurisu .gif from [Phantom Breaker Battle Grounds](http://5pb.jp/games/pbbg/en/character_4.html).
 
