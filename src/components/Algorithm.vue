@@ -5,7 +5,7 @@
     </div>
 
     <div class="two columns">
-      <img :src="'static/' + algorithm.imageFileName" />
+      <img :src="'http://cube.crider.co.uk/visualcube.php?fmt=svg&size=100&view=plan&case=' + algorithm.moves" />
     </div>
 
     <div class="nine columns">
