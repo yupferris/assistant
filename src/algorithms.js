@@ -57,9 +57,9 @@ export default [
     { "type": "oll", "name": "42", "imageFileName": "oll42.gif", "moves": "(L' U) (L U2') (L' U') y' (L' U) (L U F)", "comments": "This is just the mirror of OLL #41." },
     { "type": "oll", "name": "29", "imageFileName": "oll29.gif", "moves": "(L2 U' L B) (L' U) (L2 U') (Rw' U' Rw)", "comments": "This is just the mirror of OLL #30." },
 
-    { "type": "pll", "name": "Aa", "imageFileName": "pll01.gif", "moves": "x (R' U R') D2 (R U' R') D2 R2", "comments": "This is a basic corner 3-cycle. It is one of my favorite and fastest algorithms. Perform the D2s with the left hand and everything else with the right." },
-    { "type": "pll", "name": "Ab", "imageFileName": "pll02.gif", "moves": "x R2 D2 (R U R') D2 (R U' R) [y'] x (L U' L) D2 (L' U L) D2 L2", "comments": "This is just the inverse of the other A perm. It is performed in a very similar manner." },
-    { "type": "pll", "name": "E", "imageFileName": "pll03.gif", "moves": "x' (R U') (R' D) (R U R' D') (R U R' D) (R U') (R' D')", "comments": "This alg is just two orientations performed consecutively." },
+    { "type": "pll", "name": "Aa", "imageFileName": "pll01.gif", "moves": "x (R' U R') D2 (R U' R') D2 R2 x'", "comments": "This is a basic corner 3-cycle. It is one of my favorite and fastest algorithms. Perform the D2s with the left hand and everything else with the right." },
+    { "type": "pll", "name": "Ab", "imageFileName": "pll02.gif", "moves": "x' R2 U2 R D R' U2 R D' R x", "comments": "" },
+    { "type": "pll", "name": "E", "imageFileName": "pll03.gif", "moves": "x' (R U') (R' D) (R U R' D') (R U R' D) (R U') (R' D') x", "comments": "This alg is just two orientations performed consecutively." },
     { "type": "pll", "name": "Ua", "imageFileName": "pll06.gif", "moves": "(R U' R U) (R U) (R U') (R' U' R2)", "comments": "This is just a simple 3-edge cycle. It is almost as fast as the corner cycles. I solve this case with the bar at the front or the back." },
     { "type": "pll", "name": "Ub", "imageFileName": "pll07.gif", "moves": "(R2 U) (R U R' U') (R' U') (R' U R')", "comments": "This is the inverse of the other U perm. I place my hands slightly differently for this algorithm. I solve this case with the bar at the front or the back." },
     { "type": "pll", "name": "H", "imageFileName": "pll05.gif", "moves": "(M2' U) (M2' U2) (M2' U) M2'", "comments": "This is extremely easy to recognize and can be performed VERY quickly. The M'2 is actually performed as (M'M') with rapid pushing at the back face of the M layer with the ring and then middle fingers." },
@@ -75,7 +75,7 @@ export default [
     { "type": "pll", "name": "Gc", "imageFileName": "pll14.gif", "moves": "(R2' Uw' R U') (R U R' Uw R2) (Fw R' Fw')", "comments": "You could rotate and insert the pair instead of performing the last three moves as shown." },
     { "type": "pll", "name": "Gd", "imageFileName": "pll17.gif", "moves": "(R U R') y' (R2' Uw' R U') (R' U R' Uw R2)", "comments": "This is just the inverse of Gc. I execute it very similarly because most of the moves overlap in the same manner." },
     { "type": "pll", "name": "V", "imageFileName": "pll18.gif", "moves": "(R' U R' Dw') (R' F' R2 U') (R' U R' F) (R F)", "comments": "This is one of my least favorite permutations because the flow just isn't there." },
-    { "type": "pll", "name": "Na", "imageFileName": "pll19.gif", "moves": "(z) D (R' U) (R2 D' R D U') (R' U) (R2 D' R U' R)", "comments": "This alg could also be performed using <R,U,L> if you don't do the rotation, but this way is faster with practice." },
-    { "type": "pll", "name": "Nb", "imageFileName": "pll20.gif", "moves": "(z) U' (R D') (R2' U R' D U') (R D') (R2' U R' D R')", "comments": "This is just the mirror of the other N permutation." },
+    { "type": "pll", "name": "Na", "imageFileName": "pll19.gif", "moves": "(z) D (R' U) (R2 D' R D U') (R' U) (R2 D' R U' R) z'", "comments": "This alg could also be performed using <R,U,L> if you don't do the rotation, but this way is faster with practice." },
+    { "type": "pll", "name": "Nb", "imageFileName": "pll20.gif", "moves": "(z) U' (R D') (R2' U R' D U') (R D') (R2' U R' D R') z'", "comments": "This is just the mirror of the other N permutation." },
     { "type": "pll", "name": "Y", "imageFileName": "pll21.gif", "moves": "(F R U') (R' U' R U) (R' F') (R U R' U') (R' F R F')", "comments": "This is very quick and can be performed without any adjustments of where the fingers are. It is just a combination of two quick orientations." }
 ]
