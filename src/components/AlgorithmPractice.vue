@@ -3,7 +3,7 @@
     <div class="row">
       <div class="twelve columns">
         <div align="center">
-          <img v-if="currentAlgorithm" style="display: inline-block; width: 228px; height: 228px" :src="'http://cube.crider.co.uk/visualcube.php?fmt=svg&size=228&view=plan&case=' + currentAlgorithm.moves" />
+          <img v-if="currentAlgorithm" style="display: inline-block; width: 228px; height: 228px" :src="'static/' + currentAlgorithm.imageFileName" />
           <div v-if="!currentAlgorithm" style="display: inline-block; width: 228px; height: 228px"></div>
         </div>
       </div>
