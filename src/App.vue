@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-    <div class="row" style="margin-top: 10%">
+    <link rel="icon" type="image/png" href="static/favicon.png">
+    <link :href="'static/' + currentTheme + '.css'" rel="stylesheet" type="text/css">
+    <div id='header' class="row">
       <div class="one column">
         <img src="./assets/kurisu.gif">
       </div>
@@ -13,11 +15,12 @@
     <hr />
 
     <div class="row">
-      <div class="twelve columns">
-        <a class="button">standard solving</a>
+      <div id='nav' class="two-half column">
+        <a id='nav-standard-solve' class="button">standard solving</a>
         <a class="button button-primary" v-on:click="navigate('oll-practice')">oll practice</a>
         <a class="button button-primary" v-on:click="navigate('pll-practice')">pll practice</a>
         <a class="button button-primary" v-on:click="navigate('algorithms')">algorithms</a>
+        <a class="button button-primary" v-on:click="navigate('settings')">settings</a>
       </div>
     </div>
 
@@ -30,6 +33,8 @@
     <div v-show="currentView === 'algorithms'">
       <algorithms></algorithms>
     </div>
+
+    <settings v-on:changeTheme="changeTheme" :show="currentView === 'settings'"></settings>
   </div>
 </template>
 
@@ -37,19 +42,26 @@
 import OllPractice from './components/OllPractice'
 import PllPractice from './components/PllPractice'
 import Algorithms from './components/Algorithms'
+import Settings from './components/Settings'
+import Themes from './Themes'
 
 export default {
   components: {
     OllPractice,
     PllPractice,
-    Algorithms
+    Algorithms,
+    Settings
   },
   data() {
     return {
-      currentView: "algorithms"
+      currentView: "algorithms",
+      currentTheme: Themes.currentTheme()
     };
   },
   methods: {
+    changeTheme: function(theme) {
+      this.currentTheme = theme;
+    },
     navigate: function(view) {
       this.currentView = view;
     }

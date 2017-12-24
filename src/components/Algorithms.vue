@@ -1,9 +1,11 @@
 <template>
-  <template v-for="alg in algorithms">
-    <algorithm :algorithm="alg"></algorithm>
+  <div>
+    <div v-for="(alg, index) in algorithms">
+      <algorithm :algorithm="alg"></algorithm>
 
-    <hr v-if="$index != algorithms.length - 1" />
-  </template>
+      <hr v-if="index != algorithms.length - 1" />
+    </div>
+  </div>
 </template>
 
 <script>

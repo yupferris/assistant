@@ -1,0 +1,17 @@
+#header {
+  display: none;
+}
+
+hr {
+  display: none;
+}
+
+#nav {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#nav-standard-solve {
+  display: none;
+}
