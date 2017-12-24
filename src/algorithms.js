@@ -12,7 +12,7 @@ export default [
     { "type": "oll", "name": "3", "imageFileName": "oll03.svg", "moves": "Fw (R U R' U') Fw' U' F (R U R' U') F'", "comments": "This is a clever combination of the two six move OLLs." },
     { "type": "oll", "name": "4", "imageFileName": "oll04.svg", "moves": "Fw (R U R' U') Fw' U F (R U R' U') F'", "comments": "This is another combination of the two six move OLLs." },
     { "type": "oll", "name": "17", "imageFileName": "oll17.svg", "moves": "(R U R' U) (R' F R F') U2 (R' F R F')", "comments": "This one is very fast. Each of the three triggers should be lightning fast." },
-    { "type": "oll", "name": "19", "imageFileName": "oll19.svg", "moves": "Rw' (R U) (R U R' U' Rw) x (R2' U) (R U')", "comments": "This alg is the same as the &quot;X&quot; orientation (#20) except with a slight modification." },
+    { "type": "oll", "name": "19", "imageFileName": "oll19.svg", "moves": "Rw' (R U) (R U R' U' Rw) x (R2' U) (R U') x'", "comments": "This alg is the same as the X orientation (#20) except with a slight modification." },
     { "type": "oll", "name": "18", "imageFileName": "oll18.svg", "moves": "F (R U R' U) y' (R' U2) (R' F R F')", "comments": "This case has a couple of fast triggers in it." },
     { "type": "oll", "name": "2", "imageFileName": "oll02.svg", "moves": "F (R U R' U') S (R U R' U') Fw'", "comments": "This algorithm is just the easy T-orientation followed by the easy P-orientation.The S can take a little getting used to." },
     { "type": "oll", "name": "1", "imageFileName": "oll01.svg", "moves": "(R U2) (R2' F R F') U2' (R' F R F')", "comments": "This is just (R U2 R') followed by a couple of sledgehammers." },
