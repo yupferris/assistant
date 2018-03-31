@@ -1,0 +1,16 @@
+#!/usr/bin/env babel-node
+
+const fs = require("fs"),
+      http = require("http");
+
+var algorithms = require('../src/algorithms.js').default
+
+algorithms.map(function(alg) {
+  var url = 'http://cube.crider.co.uk/visualcube.php?fmt=svg&size=228&view=plan&case=' + alg.moves
+  var dest = "static/" + alg.imageFileName
+
+  var file = fs.createWriteStream(dest);
+  http.get(url, (response) => {
+    response.pipe(file);
+  });
+})

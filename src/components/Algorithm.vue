@@ -5,7 +5,7 @@
     </div>
 
     <div class="two columns">
-      <img :src="'static/' + algorithm.imageFileName" />
+      <img :src="'static/' + algorithm.imageFileName" style="width:100px;height:100px"/>
     </div>
 
     <div class="nine columns">

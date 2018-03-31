@@ -3,7 +3,7 @@
     <div class="row">
       <div class="twelve columns">
         <div align="center">
-          <img v-if="currentAlgorithm" width="228" height="228" :src="'static/' + currentAlgorithm.imageFileName" style="-ms-interpolation-mode: nearest-neighbor; image-rendering: -webkit-optimize-contrast; image-rendering: -webkit-crisp-edges; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: pixelated;" />
+          <img v-if="currentAlgorithm" style="display: inline-block; width: 228px; height: 228px" :src="'static/' + currentAlgorithm.imageFileName" />
           <div v-if="!currentAlgorithm" style="display: inline-block; width: 228px; height: 228px"></div>
         </div>
       </div>
